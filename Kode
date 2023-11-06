@@ -1,0 +1,227 @@
+include gdrive-sheets
+include data-source
+include tables
+include shared-gdrive("dcic-2021", "1wyQZj_L0qqV9Ekgr9au6RX2iqt2Ga8Ep")
+
+
+
+sirkel1 = circle(60, "solid", "blue")
+
+sirkel2 = circle(50, "solid", "green")
+
+sirkel3 = circle(40, "solid", "red")
+
+sirkel4 = circle(30, "solid", "orange")
+
+pinne = circle(10, "solid" , "black")
+
+
+
+#Start
+start = underlay((sirkel1),
+  underlay((sirkel2),
+    underlay((sirkel3),
+      underlay((sirkel4),
+        underlay((pinne),
+          underlay-xy((pinne), -150, 0,
+            underlay-xy((pinne), -300, 0, empty-image)))))))
+
+
+#trekk 1
+trekk1 = underlay((sirkel1),
+  underlay((sirkel2),
+    underlay((sirkel3),
+        underlay((pinne),
+        underlay-xy((sirkel4), -130, 20,
+          underlay-xy((pinne), -150, 0,
+           underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 2
+trekk2 = underlay((sirkel1),
+    underlay((sirkel2),
+      underlay((pinne),
+      underlay-xy((sirkel4), -130, -5,
+        underlay-xy((pinne), -150, -25,
+          underlay-xy((sirkel3), -270, 30,
+           underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 3
+trekk3 = underlay((sirkel1),
+  underlay((sirkel2),
+      underlay((pinne),
+        underlay-xy((pinne), -150, -25,
+        underlay-xy((sirkel3), -270, 10,
+          underlay-xy((sirkel4), -280, 20,
+           underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 4
+trekk4 = underlay((sirkel1),
+   underlay((pinne),
+    underlay-xy((sirkel2), -110, 15,
+      underlay-xy((pinne), -150, -25,
+        underlay-xy((sirkel3), -270, 10,
+          underlay-xy((sirkel4), -280, 20,
+           underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 5
+trekk5 = underlay((sirkel1),
+ underlay((sirkel4),
+  underlay((pinne),
+      underlay-xy((sirkel2), -110, 15,
+        underlay-xy((pinne), -150, -25,
+          underlay-xy((sirkel3), -270, 30,
+           underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 6
+trekk6 = underlay((sirkel1),
+ underlay((sirkel4),
+  underlay((pinne),
+      underlay-xy((sirkel2), -110, 10,
+        underlay-xy((sirkel3), -120, 30,
+          underlay-xy((pinne), -150, 0,
+       underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 7
+trekk7 = underlay((sirkel1),
+  underlay((pinne),
+    underlay-xy((sirkel2), -110, 10,
+      underlay-xy((sirkel3), -120, 10,
+        underlay-xy((sirkel4), -130, 20,
+          underlay-xy((pinne), -150, 0,
+            underlay-xy((pinne), -300, 0, empty-image)))))))
+
+#trekk 8
+trekk8 = underlay-xy((pinne), -50, -50,
+  underlay-xy((sirkel2), -170, -10,
+    underlay-xy((sirkel3), -180, -20,
+      underlay-xy((sirkel4), -190, -30,
+        underlay-xy((pinne), -210, -50,
+          underlay-xy((sirkel1), -310, 50,
+             underlay-xy((pinne), -360, 0, empty-image)))))))
+
+#trekk 9
+trekk9 = underlay-xy((pinne), -50, -50,
+  underlay-xy((sirkel2), -170, -10,
+    underlay-xy((sirkel3), -180, -20,
+        underlay-xy((pinne), -210, -50,
+        underlay-xy((sirkel1), -310, 30,
+          underlay-xy((sirkel4), -340, 20,
+            underlay-xy((pinne), -360, 0, empty-image)))))))
+
+#trekk 10
+trekk10 = underlay-xy((sirkel3), -20, -20,
+underlay-xy((pinne), -50, -50,
+  underlay-xy((sirkel2), -170, -10,
+        underlay-xy((pinne), -210, -50,
+        underlay-xy((sirkel1), -310, 30,
+          underlay-xy((sirkel4), -340, 20,
+            underlay-xy((pinne), -360, 0, empty-image)))))))
+
+#trekk 11
+trekk11 = underlay-xy((sirkel3), -20, -20,
+  underlay-xy((sirkel4), -30, -30,
+    underlay-xy((pinne), -50, -50,
+      underlay-xy((sirkel2), -170, -10,
+        underlay-xy((pinne), -210, -50,
+          underlay-xy((sirkel1), -310, 30,
+            underlay-xy((pinne), -360, -20, empty-image)))))))
+
+#trekk 12
+trekk12 = underlay-xy((sirkel3), -20, -20,
+  underlay-xy((sirkel4), -30, -30,
+    underlay-xy((pinne), -50, -50,
+      underlay-xy((pinne), -210, -50,
+        underlay-xy((sirkel1), -310, 10,
+          underlay-xy((sirkel2), -320, 20,
+            underlay-xy((pinne), -360, -20, empty-image)))))))
+
+#trekk 13
+trekk13 = underlay-xy((sirkel3), -20, -20,
+   underlay-xy((pinne), -50, -50,
+    underlay-xy((sirkel4), -190, -30,
+      underlay-xy((pinne), -210, -50,
+        underlay-xy((sirkel1), -310, 10,
+          underlay-xy((sirkel2), -320, 20,
+            underlay-xy((pinne), -360, -20, empty-image)))))))
+
+#trekk 14
+trekk14 = underlay-xy((pinne), -50, -50,
+    underlay-xy((sirkel4), -190, -30,
+     underlay-xy((pinne), -210, -50,
+      underlay-xy((sirkel1), -310, 10,
+        underlay-xy((sirkel2), -320, 10,
+          underlay-xy((sirkel3), -330, 10,
+            underlay-xy((pinne), -360, -20, empty-image)))))))
+
+#trekk 15
+trekk15 = underlay-xy((pinne), -50, -50,
+     underlay-xy((pinne), -210, -50,
+      underlay-xy((sirkel1), -310, 10,
+        underlay-xy((sirkel2), -320, 10,
+         underlay-xy((sirkel3), -330, 10,
+          underlay-xy((sirkel4), -340, 0,
+            underlay-xy((pinne), -360, -20, empty-image)))))))
+
+liste = [array: start, trekk1, trekk2, trekk3, trekk4, trekk5, trekk6, trekk7, trekk8, trekk9, trekk10, trekk11, trekk12, trekk13, trekk14, trekk15]
+
+
+
+var index = 0
+
+
+var status = "off"
+
+trekktabel = table: Trekk :: String, Forklaring :: String
+  row: "move()", "Gå til neste trekk"
+  row: "back()", "Gå til forige trekk"
+  row: "play()", "Skru på spillet"
+    
+    
+end
+
+
+
+
+fun play():
+  block:
+    status := "on"
+    liste.get-now(index)
+  end
+end
+
+
+fun move():
+  if status == "on":
+    block:
+      index := index + 1
+      new-row = get-row(trekktabel, 0)
+      add-row(trekktabel, new-row)
+      liste.get-now(index)
+    end
+  else:
+    feilmelding = "Husk å start spille før du kan bruke move()"
+    feilmelding
+  end
+end
+
+
+fun back():
+  if status == "on":
+    block:
+      index := index - 1
+      liste.get-now(index)
+    end
+  else:
+    feilmelding = "Husk å start spille før du kan bruke back()"
+    feilmelding
+  end
+end
+
+
+
+
+var innstruks1 = "Velkom til Hanoi-tårnet"
+var innstruks2 = "Under ser du en tabel med gyldige kommandoer"
+innstruks1
+innstruks2
+trekktabel
